@@ -10,7 +10,7 @@ app = FastAPI()
 # Initialize Strands Agent with native Gemini provider
 try:
     model = GeminiModel(
-        model_id="gemini-3-pro",
+        model_id="gemini-2.5-flash",
         client_args={
             "api_key": os.environ.get("GEMINI_API_KEY")
         }
